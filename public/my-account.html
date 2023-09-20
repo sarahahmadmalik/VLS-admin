@@ -16,12 +16,12 @@
     </head>
     <body class="h-[100vh]  flex flex-col">
         <div class="flex flex-row w-full ">
-            <div class="flex flex-col  items-center py-4  space-y-5 h-full w-[100px] border shadow-sm border-[#E8E8E8]">
+            <div class="md:flex md:flex-col hidden items-center py-4  space-y-5 h-full w-[100px] border shadow-sm border-[#E8E8E8]">
                 <div>
                     <img src="./images/box.svg"/>
                     <h2 class="fontOutfit">Payos</h2>
                 </div>
-                <div class="pt-[2rem] h-full">
+                <div class="pt-[2rem] h-full  ">
                     <ul class="flex flex-col space-y-2 items-center">
                         <button class="my-2 menu-button py-3 px-3 rounded-md">
                             <a href="./index.html" class=""><img src="./images/menu1.svg"/></a>
@@ -48,6 +48,20 @@
                         </li>
                     </ul>
                 </div>
+
+               
+            </div>
+            <div class="md:hidden mobile-tabs">
+                <ul class="flex justify-between h-20 bg-[#594ed3] video-shadow px-3 py-4">
+                  <a href="./index.html" class=""><img src="./images/menu1.svg" /></a>
+                  <a href="./VSL&WebinarStats.html" ><img src="./images/menu2.svg" /></a>
+                  <a href="#" ><img src="./images/menu3.svg" /></a>
+                  <a href="#" ><img src="./images/menu4.svg" /></a>
+                  <a href="./pricingplans.html" ><img src="./images/menu5.svg" /></a>
+                  <a href="#" > <img src="./images/menu6.svg" /></a>
+                  <a href="./my-account.html" ><img src="./images/menu7.svg" /></a>
+                </ul>
+              
             </div>
             <div class="w-full">
                 <div class="w-full flex flex-row justify-between items-center  py-3 px-[2rem]" style="box-shadow: 0px 3px 40px 0px #DCE0F933;">
@@ -88,12 +102,12 @@
 
                         <div class="w-full px-2">
                             <div class="w-full items-center flex-col lg:flex-row flex lg:items-end">
-                            <div class="flex flex-col lg:flex-row w-full mt-8 ">
+                            <div class="flex flex-col items-center md:items-start lg:flex-row w-full mt-8 ">
                                 <div class="rounded-full">
                                     <img src="./images/profile.svg"/>
                                 </div>
                                 <div class="mx-3 flex flex-col justify-end">
-                                    <div class="font-[500] text-[#1E2029]">Upload Image</div>
+                                    <div class="font-[500] mt-3 md:mt-0 text-[#1E2029] text-center md:text-left">Upload Image</div>
                                     <div class="">
                                         <button for="image-upload" class= "my-2 text-[#5932EA] border border-[#5932EA] rounded-md px-4 w-[160px] py-2 transition duration-300 hover:bg-[#5932EA] hover:text-white hover:border-transparent focus:outline-none focus:ring focus:ring-[#5932EA] focus:ring-opacity-50">
                                             <input type="file" id="image-upload" class="hidden" accept="image/*" />
@@ -102,7 +116,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full flex lg:justify-end">
+                            <div class="w-full flex justify-center mt-4 md:mt-0 lg:justify-end">
                                 <button class="text-[#FC3232] flex  items-start lg:items-center border border-[#FC3232]  rounded-md px-4 lg:px-[6.3rem] py-2 transition duration-300 hover:bg-[#FC3232] hover:text-white  focus:outline-none  mr-1 ">
                                     <img src="./images/delete.svg" class="mr-2"/>
                                     Cancel Account 

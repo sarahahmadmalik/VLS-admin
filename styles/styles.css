@@ -9,9 +9,35 @@ body {
   height: 100vh !important;
   width: 100% !important;
 }
+.mobile-tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Background color for the tabs */
+
+}
+
+.tab-item {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-item.active {
+  background-color: #5932ea; /* Background color for the active tab */
+  color: #fff; /* Text color for the active tab */
+}
+
 
 html{
   height: 100vh !important;
+}
+
+.main-table td{
+  min-width: 300px;
 }
 
 

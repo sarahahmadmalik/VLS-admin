@@ -20,7 +20,7 @@
 </head>
 <body class="h-full  flex flex-col">
   <div class="flex flex-row w-full ">
-    <div class="flex flex-col  items-center py-4  space-y-5 h-full w-[100px] border shadow-sm border-[#E8E8E8]">
+    <div class="md:flex md:flex-col hidden  items-center py-4  space-y-5 h-full w-[100px] border shadow-sm border-[#E8E8E8]">
       <div>
         <img src="./images/box.svg" />
         <h2 class="fontOutfit">Payos</h2>
@@ -51,6 +51,18 @@
         </ul>
       </div>
     </div>
+    <div class="md:hidden mobile-tabs">
+      <ul class="flex justify-between h-20 bg-[#594ed3] video-shadow px-3 py-4">
+        <a href="./index.html" class=""><img src="./images/menu1.svg" /></a>
+        <a href="./VSL&WebinarStats.html" ><img src="./images/menu2.svg" /></a>
+        <a href="#" ><img src="./images/menu3.svg" /></a>
+        <a href="#" ><img src="./images/menu4.svg" /></a>
+        <a href="./pricingplans.html" ><img src="./images/menu5.svg" /></a>
+        <a href="#" > <img src="./images/menu6.svg" /></a>
+        <a href="./my-account.html" ><img src="./images/menu7.svg" /></a>
+      </ul>
+    
+  </div>
     <div class="w-full">
       <div class="w-full flex flex-row justify-between items-center border py-3 px-[2rem]" style="box-shadow: 0px 3px 40px 0px #DCE0F933;">
         <div class="relative w-[45%] rounded-lg overflow-hidden border border-[#ECEFF2] focus-within:border-[#5932EA] transition-all duration-300">
@@ -92,7 +104,7 @@
         <div class="w-full h-full">
             <h1 class="text-[#5932EA] font-[600] text-[26px]" style="font-size: 26px !important;">Upload Video</h1>
             <p class="text-[#516377] text-[20px] my-2" style="color: #516377 !important;">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
-            <div class="flex items-center space-x-5 mt-8 mx-5">
+            <div class="flex items-center flex-wrap space-x-5 mt-8 mx-5">
                 <div class="flex items-center ">
                     <input id="vslRadio" type="radio" value="VSL" name="videoType" class="w-4 h-4 text-[#5932EA] bg-gray-100 border-gray-300 ">
                     <label for="vslRadio" class="ml-2 text-[22px] font-[500] text-[#516377]">VSL</label>
@@ -103,7 +115,7 @@
                 </div>
                 
             </div>
-            <div class="flex flex-row w-full my-8  ">
+            <div class="flex md:flex-row flex-col w-full my-8  ">
                 <!-- Left Side: Video Upload Form -->
                 <div class="w-full md:w-1/2 lg:w-3/4  p-4 ">
                   <form class="w-full">
@@ -136,9 +148,9 @@
             <button class="text-[#5932EA] border border-[#5932EA] rounded-md px-4 py-2 transition duration-300 hover:bg-[#5932EA] hover:text-white hover:border-transparent focus:outline-none focus:ring focus:ring-[#5932EA] focus:ring-opacity-50">
                 Cancel
             </button>
-            <button class="bg-[#5932EA] text-white rounded-md px-4 py-2 transition duration-300 hover:bg-opacity-80 focus:outline-none focus:ring focus:ring-[#5932EA] focus:ring-opacity-50">
+            <a href="#" class="bg-[#5932EA] text-white rounded-md px-4 py-2 transition duration-300 hover:bg-opacity-80 focus:outline-none focus:ring focus:ring-[#5932EA] focus:ring-opacity-50">
                 Continue
-            </button>
+            </a>
         </div>
 </div>
 

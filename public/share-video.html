@@ -20,7 +20,7 @@
 </head>
 <body class="h-full  flex flex-col">
   <div class="flex flex-row w-full ">
-    <div class="flex flex-col  items-center py-4  space-y-5 h-full w-[100px] border shadow-sm border-[#E8E8E8]">
+    <div class="md:flex md:flex-col hidden  items-center py-4  space-y-5 h-full w-[100px] border shadow-sm border-[#E8E8E8]">
       <div>
         <img src="./images/box.svg" />
         <h2 class="fontOutfit">Payos</h2>
@@ -51,6 +51,18 @@
         </ul>
       </div>
     </div>
+    <div class="md:hidden mobile-tabs">
+      <ul class="flex justify-between h-20 bg-[#594ed3] video-shadow px-3 py-4">
+        <a href="./index.html" class=""><img src="./images/menu1.svg" /></a>
+        <a href="./VSL&WebinarStats.html" ><img src="./images/menu2.svg" /></a>
+        <a href="#" ><img src="./images/menu3.svg" /></a>
+        <a href="#" ><img src="./images/menu4.svg" /></a>
+        <a href="./pricingplans.html" ><img src="./images/menu5.svg" /></a>
+        <a href="#" > <img src="./images/menu6.svg" /></a>
+        <a href="./my-account.html" ><img src="./images/menu7.svg" /></a>
+      </ul>
+    
+  </div>
     <div class="w-full">
       <div class="w-full flex flex-row justify-between items-center border py-3 px-[2rem]" style="box-shadow: 0px 3px 40px 0px #DCE0F933;">
         <div class="relative w-[45%] rounded-lg overflow-hidden border border-[#ECEFF2] focus-within:border-[#5932EA] transition-all duration-300">
@@ -93,12 +105,12 @@
         <div class="w-full h-full">
             <h1 class="text-[#5932EA] font-[600] text-[26px]" style="font-size: 26px !important;">Share Video</h1>
             <p class="text-[#516377] text-[20px] my-2" style="color: #516377 !important;">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>  
-            <div class="bg-[#FFFFFF] border border-[#ECEEF1] flex w-full rounded-md my-[3rem] video-shadow">
+            <div class="bg-[#FFFFFF] border border-[#ECEEF1] flex flex-col lg:flex-row w-full rounded-md my-[3rem] video-shadow">
               <div class="relative" style="width: 100%; height: 100%;">
                 <img src="./images/share.svg" style="width: 100%; height: 100%; object-fit: cover;" />
               </div>
               
-                <div class="w-[70%]">
+                <div class="lg:w-[70%] w-full">
                     <div class="border-b border-[#ECEEF1] py-2 px-4 "><h1 class="text-[#5932EA] font-[500] text-[22px]">Embed Video</h1></div>
                     <div class="px-4 py-2 text-[#516377]">
                         iframe width="560" height="315" src="https://www.youtube.com/embed/J5PrbaUFN80?si=syYcQ6XTpeJyVhTz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>iframe iframe width="560" height="315" src="https://www.youtube.com/embed/J5PrbaUFN80?si=syYcQ6XTpeJyVhTz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
