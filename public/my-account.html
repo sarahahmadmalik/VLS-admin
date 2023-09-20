@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="/dist/output.css" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="/styles/output.css"/>
+     
+        <link rel="stylesheet" href="out.css">
+
+        <title>VSL And Webinar Stats</title>
+    </head>
+    <body class="h-[100vh]  flex flex-col">
+        <div class="flex flex-row w-full ">
+            <div class="flex flex-col  items-center py-4  space-y-5 h-full w-[100px] border shadow-sm border-[#E8E8E8]">
+                <div>
+                    <img src="/public/images/box.svg"/>
+                    <h2 class="fontOutfit">Payos</h2>
+                </div>
+                <div class="pt-[2rem] h-full">
+                    <ul class="flex flex-col space-y-2 items-center">
+                        <button class="my-2 menu-button py-3 px-3 rounded-md">
+                            <a href="/public/index.html" class=""><img src="/public/images/menu1.svg"/></a>
+                        </button>
+                        <button class="my-2 menu-button py-3 px-3 rounded-md">
+                            <a href="/public/VSL&WebinarStats.html"><img src="/public/images/menu2.svg"/></a>
+                        </button>
+                        <button class="my-2 menu-button py-3 px-3 rounded-md">
+                            <a href="#"><img src="/public/images/menu3.svg"/></a>
+                        </button>
+                        <button class="my-2 menu-button py-3 px-3 rounded-md">
+                            <a href="#"><img src="/public/images/menu4.svg"/></a>
+                        </button>
+                        <button class="my-2  py-3 px-3 rounded-md">
+                            <a href="/public/pricingplans.html"><img src="/public/images/menu5.svg"/></a>
+                        </button>
+                        <button class="my-2 menu-button py-3 px-3 rounded-md">
+                            <a href="#">
+                                <img src="/public/images/menu6.svg"/></a>
+                        </button>
+                        <button class="my-2 bg-[#5932EA] btn-shadow menu-button py-3 px-3 rounded-md">
+                            <a href="#"><img src="/public/images/menu7.svg"/></a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full">
+                <div class="w-full flex flex-row justify-between items-center  py-3 px-[2rem]" style="box-shadow: 0px 3px 40px 0px #DCE0F933;">
+                    <div class="relative w-[45%] rounded-lg overflow-hidden border border-[#ECEFF2] focus-within:border-[#5932EA] transition-all duration-300">
+                        <input type="text" class="w-full py-2 pl-10 pr-3 text-gray-700 focus:outline-none" placeholder="Search..."/>
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <img src="/public/images/searchIcon.svg" alt="Search"/>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="pr-4 border-r border-[#ECEFF2]">
+                            <button class="flex items-center"><img class="" src="/public/images/help.svg"/><p class="pl-2">Help</p>
+                            </button>
+                        </div>
+                        <div class="custom-dropdown pl-4">
+                            <div class="rounded-full">
+                                <img src="/public/images/raffy.svg" alt="User Image"/>
+                            </div>
+
+                            <p class="text-[#374151]">Rappy</p>
+
+                            <div><img src="/public/images/dropdownIcon.svg " height="10px" width="5px"/></div>
+
+                            <div class="custom-dropdown-menu">
+                                <div class="custom-dropdown-menu-item">
+                                    <a href="#">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full h-full px-[2rem] py-[2rem]">
+
+                    <div class="w-full h-full">
+                        <h1 class="text-[#5932EA] font-[600] text-[26px]" style="font-size: 26px !important;">My Account</h1>
+                        <p class="text-[#516377] text-[20px] my-2" style="color: #516377 !important;">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+
+                        <div class="w-full px-2">
+                            <div class="w-full items-center flex-col lg:flex-row flex lg:items-end">
+                            <div class="flex flex-col lg:flex-row w-full mt-8 ">
+                                <div class="rounded-full">
+                                    <img src="/public/images/profile.svg"/>
+                                </div>
+                                <div class="mx-3 flex flex-col justify-end">
+                                    <div class="font-[500] text-[#1E2029]">Upload Image</div>
+                                    <div class="">
+                                        <button for="image-upload" class= "my-2 text-[#5932EA] border border-[#5932EA] rounded-md px-4 w-[160px] py-2 transition duration-300 hover:bg-[#5932EA] hover:text-white hover:border-transparent focus:outline-none focus:ring focus:ring-[#5932EA] focus:ring-opacity-50">
+                                            <input type="file" id="image-upload" class="hidden" accept="image/*" />
+                                            Upload
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex lg:justify-end">
+                                <button class="text-[#FC3232] flex  items-start lg:items-center border border-[#FC3232]  rounded-md px-4 lg:px-[6.3rem] py-2 transition duration-300 hover:bg-[#FC3232] hover:text-white  focus:outline-none  mr-1 ">
+                                    <img src="/public/images/delete.svg" class="mr-2"/>
+                                    Cancel Account 
+                                  </button>  
+                            </div>
+                        </div>
+
+                            <div class="flex flex-col lg:flex-row w-full border lg:items-start my-7">
+
+                            <div class="lg:h-[450px]  rounded-md border border-[#ECEEF1] video-shadow ">
+                                <h1 class="text-[#5932EA] font-[600] text-[22px] mb-2 px-6 py-2" style="font-size: 26px !important;">Personal Info</h1>
+                                <hr class="border-b border-[#ECEEF1]" />
+                                <form class="py-6 px-2">
+                                    <div class="mx-2 flex-col ">
+                                        <div class="flex flex-col lg:flex-row lg:justify-between  mb-8">
+                                            <div class="w-full lg:w-1/2 px-2 mb-4 mx-4 ">
+                                                <label for="first-name" class="block text-[#1E2029] text-[14px] font-[500] mb-1">First Name</label>
+                                                <input type="text" id="first-name" class="w-full px-3 py-2 border border-[#ECECEC] bg-[#FDFDFD] rounded-md  overflow-hidden focus:outline-none  focus-within:border-[#5932EA] transition-all duration-300" />
+                                            </div>
+                                            <div class="w-full lg:w-1/2 px-2 mb-4 mx-4">
+                                                <label for="last-name" class="block text-[#1E2029] text-[14px] font-[500] mb-1">Last Name</label>
+                                                <input type="text" id="last-name" class="w-full px-3 py-2 border border-[#ECECEC] bg-[#FDFDFD] rounded-md  focus-within:border-[#5932EA] focus:outline-none transition-all duration-300" />
+                                            </div>
+                                            <div class="w-full lg:w-1/2 px-2 mb-4 mx-4">
+                                                <label for="username" class="block text-[#1E2029] text-[14px] font-[500] mb-1">Username</label>
+                                                <input type="text" id="username" class="w-full px-3 py-2 border border-[#ECECEC] bg-[#FDFDFD] rounded-md  overflow-hidden focus:outline-none  focus-within:border-[#5932EA] transition-all duration-300" " />
+                                            </div>
+                                        </div>
+
+                                        <div class="flex flex-col lg:flex-row lg:justify-between mt-6">
+                                        
+                                        <div class="w-full lg:w-1/2 px-2 mb-4 mx-4">
+                                            <label for="email" class="block text-[#1E2029] text-[14px] font-[500] mb-1">Email</label>
+                                            <input type="email" id="email" class="w-full px-3 py-2 border  border-[#ECECEC] bg-[#FDFDFD] rounded-md  overflow-hidden  focus:outline-none focus-within:border-[#5932EA] transition-all duration-300" " />
+                                        </div>
+                                        <div class="w-full lg:w-1/2 px-2 mb-4 mx-4">
+                                            <label for="country" class="block text-[#1E2029] text-[14px] font-[500] mb-1">Country</label>
+                                            <input type="text" id="country" class="w-full px-3 py-2 border border-[#ECECEC] bg-[#FDFDFD] rounded-md  overflow-hidden focus:outline-none  focus-within:border-[#5932EA] transition-all duration-300" " />
+                                        </div>
+                                        <div class="w-full lg:w-1/2 px-2 mb-4 mx-4">
+                                            <label for="password" class="block text-[#1E2029] text-[14px] font-[500] mb-1">Password</label>
+                                            <input type="password" id="password" class="w-full px-3 py-2 border border-[#ECECEC] bg-[#FDFDFD] rounded-md  overflow-hidden focus:outline-none  focus-within:border-[#5932EA] transition-all duration-300" " />
+                                        </div>
+                                    </div>
+                                        
+                                        
+                                    </div>
+                                    <div class="flex text-[15px] w-full items-center justify-end mt-8 px-4">
+                                        <button class="my-2 text-[#5932EA] border border-[#5932EA] rounded-md px-4 py-2 transition duration-300 hover:bg-[#5932EA] hover:text-white hover:border-transparent focus:outline-none focus:ring focus:ring-[#5932EA] focus:ring-opacity-50 mx-4">Reset Changes</button>
+                                        <button class="text-white border border-[#5932EA]  rounded-md px-4 py-2 transition duration-300 hover:bg-white bg-[#5932EA] hover:text-[#5932EA] hover:border-[#5932EA] focus:outline-none focus:ring focus:ring-[#5932EA] focus:ring-opacity-50 mr-1 ">
+                                            Save Changes
+                                          </button>                                      
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div style="border: 1px solid FFFFFFB2 !important;" class=" cursor-pointer relative  pricing-card overflow-hidden rounded-lg border py-5  border-[#ECEEF1] transition-transform hover:transform hover:-translate-y-2  hover:border hover:border-[#5932EA] hover:shadow-xl duration-300 mt-8 lg:ml-5">            <div class="bg-[#5932EA] rounded-lg p-3 w-[50px] mx-5 ">
+                                <img src="/public/images/plan.svg" class="w-6 h-6 rounded-full" alt="Package Icon">
+                            </div>
+                                <div class="py-4 px-6">
+                                    <h2  class="text-[#1B223C] font-[600] text-[22px] flex">Current Plan</h2>
+                                    <p class="text-[#797878] my-2">Unleash the Power of Your Business with Pro Plan</p>
+                                    <div class="flex items-center text-[#5932EA] font-semibold">
+                                        <span class="text-2xl">$34</span>
+                                        <span class="text-[#1B223C] ml-2">per month</span>
+                                    </div>
+                                    <hr class="border-[#E7EBFF] my-3">
+                                    <ul class="text-[#1B223C] list-disc pl-6 ">
+                                        <li class="my-1 font-[600]">Enhanced Analytics</li>
+                                        <li class="mb-1 font-[600]">Custom Domain</li>
+                                        <li class="mb-1 font-[600]">E-commerce Integration</li>
+                                        <li class="mb-1 font-[600]">Priority Support</li>
+                                    </ul>
+                                    <button class="bg-[#5932EA] text-white font-[500] text-[15px] rounded-md w-full py-3 px-4 mt-4">
+                                        Upgrade Plan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        </div>
+
+                        <div class="w-full flex-col lg:flex-row flex lg:items-start ">
+                            <div class="rounded-md border border-[#ECEEF1] video-shadow  w-full mr-4">
+                                <h1 class="text-[#5932EA] font-[600] text-[22px] mb-2 px-6 py-2" style="font-size: 26px !important;">Account Usage</h1>
+                                <hr class="border-b border-[#ECEEF1]" />
+                                <div class="px-6 py-4 ">
+                                    <div class="flex justify-between mb-2">
+                                        <div>Videos</div>
+                                        <span class="text-[#5932EA]">109/250</span>
+                                    </div>
+                                    <!-- Videos Progress Bar -->
+                                    <div class="relative h-4 bg-[#D9D9D9] rounded-full">
+                                        <div class="absolute h-full bg-[#5932EA] rounded-full" style="width: 44%;"></div>
+                                    </div>
+                                    
+                                    <div class="flex justify-between mb-1">
+                                        <div>Videos</div>
+                                        <span class="text-[#5932EA]">109/250</span>
+                                    </div>
+                                    <!-- Monthly Bandwidth Progress Bar -->
+                                    <div class="relative h-4  bg-[#D9D9D9] rounded-full">
+                                        <div class="absolute h-full bg-[#5932EA] rounded-full" style="width: 44%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-[#FFFFFF] border border-[#ECEEF1] flex w-full rounded-md mt-8 lg:mt-0  video-shadow">
+                                <div class="w-full">
+                                  <div class="border-b border-[#ECEEF1] py-2 px-4 ">
+                                    <h1 class="text-[#5932EA] font-[500] text-[22px]">API Key</h1>
+                                  </div>
+                                  <p class="text-[#1E2029] text-[18px] font-[500] px-4 pt-5">API key</p>
+                                  <div class="w-full flex  flex-col sm:flex-row px-4 py-4">
+                                   
+                                    <!-- Add the input element here -->
+                                    <input type="text" value="658796846546846516ygsdfjh" class="text-[#A5A6A9] w-full sm:w-[45%] border border-[#ECECEC] bg-[#FDFDFD] px-4 py-1 rounded-md" disabled>
+                                    <button class="my-2 text-[#5932EA] border border-[#5932EA] rounded-md px-4 py-2 transition duration-300 hover:bg-[#5932EA] hover:text-white hover:border-transparent focus:outline-none focus:ring focus:ring-[#5932EA] focus:ring-opacity-50 mx-4">
+                                        Generate New API
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <script>
+            function toggleDropdown() {
+                const dropdownMenu = document.getElementById('dropdown-menu');
+                dropdownMenu.classList.toggle('hidden');
+            }
+
+            function selectDropdownOption(option) {
+
+                console.log('Selected option:', option);
+
+                const dropdownMenu = document.getElementById('dropdown-menu');
+                dropdownMenu.classList.add('hidden');
+            }
+            const menuButtons = document.querySelectorAll('.menu-button');
+
+         
+
+         
+        </script>
+
+    </body>
+</html>

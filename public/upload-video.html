@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/public/styles.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="out.css">
+
+  
+  <title>VSL And Webinar Stats</title>
+</head>
+<body class="h-full  flex flex-col">
+  <div class="flex flex-row w-full ">
+    <div class="flex flex-col  items-center py-4  space-y-5 h-full w-[100px] border shadow-sm border-[#E8E8E8]">
+      <div>
+        <img src="/public/images/box.svg" />
+        <h2 class="fontOutfit">Payos</h2>
+      </div>
+      <div class="pt-[2rem]">
+        <ul class="flex flex-col space-y-2 items-center">
+          <button class="my-2 menu-button py-3 px-3 rounded-md">
+            <a href="/public/index.html" class=""><img src="/public/images/menu1.svg" /></a>
+          </button>
+          <button class="my-2 menu-button py-3 px-3 rounded-md">
+            <a href="#" ><img src="/public/images/menu2.svg" /></a>
+          </button>
+          <button class="my-2 menu-button py-3 px-3 rounded-md">
+            <a href="#" ><img src="/public/images/menu3.svg" /></a>
+          </button>
+          <button class="my-2 menu-button py-3 px-3 rounded-md">
+            <a href="#" ><img src="/public/images/menu4.svg" /></a>
+          </button>
+          <button class="my-2 menu-button py-3 px-3 rounded-md">
+            <a href="#" ><img src="/public/images/menu5.svg" /></a>
+          </button>
+          <button class="my-2 menu-button py-3 px-3 rounded-md">
+           <a href="#" > <img src="/public/images/menu6.svg" /></a>
+          </button>
+          <button class="my-2 menu-button py-3 px-3 rounded-md">
+            <a href="#" ><img src="/public/images/menu7.svg" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-full">
+      <div class="w-full flex flex-row justify-between items-center border py-3 px-[2rem]" style="box-shadow: 0px 3px 40px 0px #DCE0F933;">
+        <div class="relative w-[45%] rounded-lg overflow-hidden border border-[#ECEFF2] focus-within:border-[#5932EA] transition-all duration-300">
+          <input
+            type="text"
+            class="w-full py-2 pl-10 pr-3 text-gray-700 focus:outline-none"
+            placeholder="Search..."
+          />
+          <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <img src="/public/images/searchIcon.svg" alt="Search" />
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="pr-4 border-r border-[#ECEFF2]">
+            <button class="flex items-center"><img class="" src="/public/images/help.svg"/><p class="pl-2">Help</p></button>
+          </div>
+          <div class="custom-dropdown pl-4">
+            <div class="rounded-full">
+            <img
+              src="/public/images/raffy.svg"
+              alt="User Image"
+            />
+          </div>
+         
+            <p class="text-[#374151]">Rappy</p>
+            <div><img src="/public/images/dropdownIcon.svg " height="10px" width="5px"/></div>
+            <div class="custom-dropdown-menu">
+              <div class="custom-dropdown-menu-item">
+                <a href="#">Logout</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full h-full px-[2rem] py-[2rem]">
+
+        <div class="w-full h-full">
+            <h1 class="text-[#5932EA] font-[600] text-[26px]" style="font-size: 26px !important;">Upload Video</h1>
+            <p class="text-[#516377] text-[20px] my-2" style="color: #516377 !important;">Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+            <div class="flex items-center space-x-5 mt-8 mx-5">
+                <div class="flex items-center ">
+                    <input id="vslRadio" type="radio" value="VSL" name="videoType" class="w-4 h-4 text-[#5932EA] bg-gray-100 border-gray-300 ">
+                    <label for="vslRadio" class="ml-2 text-[22px] font-[500] text-[#516377]">VSL</label>
+                </div>
+                <div class="flex items-center">
+                    <input id="webinarRadio" type="radio" value="Automated Webinar" name="videoType" class="w-4 h-4 text-[#5932EA] bg-gray-100 border-gray-300 ">
+                    <label for="webinarRadio" class="ml-2 text-[22px] font-[500] text-[#516377]">Automated Webinar</label>
+                </div>
+                
+            </div>
+            <div class="flex flex-row w-full my-8  ">
+                <!-- Left Side: Video Upload Form -->
+                <div class="w-full md:w-1/2 lg:w-3/4  p-4 ">
+                  <form class="w-full">
+                    <div class="my-6 w-full">
+                      <label for="videoLink" class="block text-gray-700 text-[18px] font-semibold">Video Link:</label>
+                      <input type="text" id="videoLink" placeholder="Enter Video Link" name="videoLink" class="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md bg-[#FDFDFD] focus:outline-none focus-within:border-[#5932EA] transition-all duration-300 text-[18px]" />
+                    </div>
+                    <div class="mb-8 w-full">
+                      <label for="videoTitle" class="block text-gray-700 text-[18px] font-semibold">Video Title:</label>
+                      <input type="text" id="videoTitle" placeholder="Enter Video Title" name="videoTitle" class="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md bg-[#FDFDFD] focus:outline-none focus-within:border-[#5932EA] transition-all duration-300 text-[18px]"  />
+                    </div>
+                    <div class="mb-8 w-full">
+                      <label for="videoTags" class="block text-gray-700 text-[18px] font-semibold">Video Tags:</label>
+                      <input type="text" id="videoTags" placeholder="Enter Video Tags" name="videoTags" class="w-full px-3 py-2 my-1 border border-gray-300 rounded-md bg-[#FDFDFD] focus:outline-none focus-within:border-[#5932EA] transition-all duration-300 text-[18px]" />
+                    </div>
+                   
+                  </form>
+                </div>
+                <!-- Right Side: Random Video Paused State -->
+                <!-- Right Side: Random Video Paused State -->
+                <div class="w-full md:w-1/2 lg:w-2/3  2xl:w-[48%] p-4 h-[370px]">
+                    <div class="relative w-full rounded-lg h-full">
+                      <video src="https://www.youtube.com/watch?v=nw_oKuKTEJs" controls class="rounded-lg h-full w-full"></video>
+                    </div>
+                  </div>
+                  
+                
+        </div>
+        <div class="w-full flex justify-end space-x-4 mt-4">
+            <button class="text-[#5932EA] border border-[#5932EA] rounded-md px-4 py-2 transition duration-300 hover:bg-[#5932EA] hover:text-white hover:border-transparent focus:outline-none focus:ring focus:ring-[#5932EA] focus:ring-opacity-50">
+                Cancel
+            </button>
+            <button class="bg-[#5932EA] text-white rounded-md px-4 py-2 transition duration-300 hover:bg-opacity-80 focus:outline-none focus:ring focus:ring-[#5932EA] focus:ring-opacity-50">
+                Continue
+            </button>
+        </div>
+</div>
+
+        </div>
+
+      </div>
+     
+    
+<script>
+       function toggleDropdown() {
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    dropdownMenu.classList.toggle('hidden');
+  }
+
+  function selectDropdownOption(option) {
+    
+      console.log('Selected option:', option);
+
+      const dropdownMenu = document.getElementById('dropdown-menu');
+      dropdownMenu.classList.add('hidden');
+    }
+    const menuButtons = document.querySelectorAll('.menu-button');
+
+function handleMenuButtonClick(event) {
+  menuButtons.forEach((button) => {
+    button.classList.remove('bg-[#5932EA]', 'btn-shadow');
+  });
+
+  event.currentTarget.classList.add('bg-[#5932EA]', 'py-3', 'px-3', 'rounded-md', 'btn-shadow');
+}
+
+menuButtons.forEach((button) => {
+  button.addEventListener('click', handleMenuButtonClick);
+});
+</script>
+
+</body>
+</html>

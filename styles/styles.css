@@ -1,0 +1,288 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+body {
+  font-family: sans-serif;
+  height: 100vh !important;
+  width: 100% !important;
+}
+
+html{
+  height: 100vh !important;
+}
+
+
+
+.fontOutfit{
+    font-family: 'Outfit', sans-serif;}
+
+.sider-shadow{
+    box-shadow: 0px 3px 40px 0px #DCE0F933;
+}
+
+
+
+ /* Styles for the dropdown button */
+ .custom-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 8px;
+
+}
+
+/* Styles for the rounded image */
+.custom-dropdown img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.graph-container {
+  position: relative;
+  height: 70px; /* Adjust the height as needed */
+  overflow: hidden; 
+}
+
+.graph2-container {
+  position: relative;
+  height: 40px; /* Adjust the height as needed */
+  overflow: hidden; 
+}
+
+.line-container{
+  position: relative;
+ width: 100%;
+ height: 200px;
+  overflow: hidden; 
+}
+
+#waveGraph {
+  width: 100%;
+  height: 100%;
+}
+
+#PlayGraph {
+  width: 100%;
+  height: 100%;
+}
+#EngageGraph{
+  width: 100%;
+  height: 100%;
+}
+
+#Time{
+  width: 100%;
+  height: 100%;
+}
+#Clicks{
+  width: 100%;
+  height: 100%;
+}
+
+
+#conversion{
+  width: 100%;
+  height: 100%;
+}
+
+#views-graph{
+  width: 100%;
+  height: 100%;
+}
+
+#views-graph-2{
+  width: 100%;
+  height: 100%;
+}
+
+#play-graph{
+  width: 100%;
+  height: 100%;
+}
+#play-graph-2{
+  width: 100%;
+  height: 100%;
+}
+
+#playsViewsGraph{
+  width: 100%;
+  height: 100%;
+}
+
+#areaGraph{
+  width: 100%;
+  height: 100%;
+}
+.pricing-card {
+  transition: transform 0.5s ease, border 0.5s ease, box-shadow 0.7s ease;
+}
+
+#areaGraph2{
+  width: 100%;
+  height: 100%;
+}
+
+.area-container{
+  width: 100%;
+}
+
+#Engage-Graph{
+  width: 100%;
+  height: 100%;
+}
+
+#Engage-Graph-2{
+  width: 100%;
+  height: 100%;
+}
+
+#conversion-graph{
+  width: 100%;
+  height: 100%;
+}
+
+#conversion-graph-2{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Styles for the dropdown menu */
+.custom-dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  min-width: 120px;
+  right: 0;
+}
+
+.custom-dropdown.open .custom-dropdown-menu {
+  display: flex;
+}
+.menu-button {
+  transition: background-color 0.3s, padding 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+@keyframes dissolve {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.upload-button {
+  animation-name: dissolve; 
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
+}
+
+ .active-tab {
+      border-bottom: 2px solid #5932EA;
+    }
+
+.dropdown-enter-active, .dropdown-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.dropdown-enter, .dropdown-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Styles for the dropdown menu items */
+.custom-dropdown-menu-item {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.custom-dropdown-menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-shadow{
+  box-shadow: 0px 8px 12px 0px #8791E94D;
+}
+
+.video-shadow{
+  box-shadow: 0px 3px 40px 0px #DCE0F933;
+}
+
+.accordion {
+  border: 1px solid #ECEEF1;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #5932EA;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-header:hover {
+  background-color: #F3F4F6;
+}
+
+.accordion-header .accordion-title {
+  font-weight: 600;
+}
+
+.accordion-header .accordion-arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-content {
+  display: none;
+  padding: 12px 20px;
+  background-color: #F3F4F6;
+}
+
+.accordion.open .accordion-content {
+  display: block;
+}
+
+/* Rotate the arrow when the accordion is open */
+.accordion.open .accordion-arrow {
+  transform: rotate(90deg);
+}
+
+/* Additional styles for the color picker and background upload */
+.color-picker {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+
+
+#color-picker-container {
+  display: flex;
+  align-items: center;
+  width: 30% !important;
+  padding: 0;
+}
+
+#color-picker {
+  width: 250px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
