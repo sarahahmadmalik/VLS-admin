@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+*{
+  font-family: 'Outfit', sans-serif;
+}
 
 body {
   font-family: sans-serif;
@@ -32,9 +37,7 @@ body {
 }
 
 
-html{
-  height: 100vh !important;
-}
+
 
 .main-table td{
   min-width: 300px;
